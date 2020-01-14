@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorSwipeRed">#AED50000</color>
+    <color name="colorSwipeBlue">#0091EA</color>
+    <color name="colorSwipeText">#FFFEFE</color>
+
+    <color name="cardview_dark_background">#FF424242</color>
+    <color name="cardview_light_background">#FFFFFFFF</color>
+
+    <color name="colorButtonYellow">#ABFFD600</color>
+    <color name="colorButtonGreen">#9A00C853</color>
+    <color name="colorButtonBlue">#B70091EA</color>
+    <color name="colorButtonPurple">#BE9B47C5</color>
+    <color name="colorButtonWhite">#BAFFFEFE</color>
+
+</resources>

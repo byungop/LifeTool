@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/tab_main_drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        android:weightSum="10.25">
+
+        <TextView
+            android:id="@+id/tab_main_textview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/_0_basic_form_teduri"/>
+
+        <Button
+            android:id="@+id/tab_main_button_add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="내용추가"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tab_main_recyclerView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="19.9"
+                android:layout_marginRight="5dp"
+                android:scrollbars="vertical"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+            <Button
+                android:id="@+id/tab_main_button_drawer"
+                android:layout_width="30dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:background="@drawable/_1_note_imageslide">
+
+        <Button
+            android:id="@+id/tab_rightslide_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="사진추가"
+            android:textSize="10sp"/>
+
+        <ListView
+            android:id="@+id/tab_rightslide_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:divider="#00FFFFFF"
+            android:dividerHeight="15dp"/>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

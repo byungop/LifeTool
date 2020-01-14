@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.chirokyel.lifeTool">
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <!-- 날씨 -->
+    <uses-permission android:name = "android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- 뮤직 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="kr.chirokyel.lifeTool._0_Frag1_All">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="kr.chirokyel.lifeTool._0_Frag0_Loading"/>
+        <activity android:name="kr.chirokyel.lifeTool._7_Lock_1_Lock"/>
+        <activity android:name="kr.chirokyel.lifeTool._7_Lock_2_Unlock"/>
+        <activity android:name="kr.chirokyel.lifeTool._7_Lock_3_Animation" android:theme="@style/Theme.AppCompat.DayNight.Dialog"/>
+
+        <activity android:name="kr.chirokyel.lifeTool._1_Note_1_Note_4_popup" android:theme="@style/Theme.AppCompat.DayNight.Dialog"/>
+        <activity android:name="kr.chirokyel.lifeTool._1_Note_2_Page_1_Main"/>
+        <activity android:name="kr.chirokyel.lifeTool._1_Note_3_Tab_1_Main"/>
+        <activity android:name="kr.chirokyel.lifeTool._1_Note_3_Tab_2_Rightslide_3_Popup_1_Edit"  android:theme="@style/Theme.AppCompat.DayNight.Dialog"/>
+        <activity android:name="kr.chirokyel.lifeTool._1_Note_3_Tab_2_Rightslide_3_Popup_2_order"  android:theme="@style/Theme.AppCompat.DayNight.Dialog"/>
+        <receiver android:name="kr.chirokyel.lifeTool._1_Note_4_Widget_1_Main">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/sticky_info" />
+        </receiver>
+        <service android:name="kr.chirokyel.lifeTool._1_Note_4_Widget_2_Service"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <service android:name="kr.chirokyel.lifeTool._3_Step_4_Service"/>
+
+        <activity android:name="kr.chirokyel.lifeTool._4_Plan_4_Popup"  android:theme="@style/Theme.AppCompat.DayNight.Dialog"/>
+
+        <activity android:name="kr.chirokyel.lifeTool._5_Todo_4_Alram_1_Popup" android:theme="@style/Theme.AppCompat.DayNight.Dialog"/>
+        <receiver android:name="kr.chirokyel.lifeTool._5_Todo_4_Alram_2_Receiver"/>
+
+        <activity android:name="kr.chirokyel.lifeTool._6_Music_1_Music_Player"/>
+        <service android:name="kr.chirokyel.lifeTool._6_Music_2_Service"/>
+
+
+
+    </application>
+
+</manifest>

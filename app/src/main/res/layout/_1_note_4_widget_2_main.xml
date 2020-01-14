@@ -1,0 +1,23 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_main_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:background="#C8FFFF8D">
+
+    <ListView
+        android:id="@+id/widget_main_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:maxLines="8"
+        android:layout_margin="8dp"
+        android:scrollbars="vertical"/>
+
+
+
+</RelativeLayout>

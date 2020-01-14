@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "495336604694",
+    "firebase_url": "https://fragment-c81df.firebaseio.com",
+    "project_id": "fragment-c81df",
+    "storage_bucket": "fragment-c81df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495336604694:android:310edfd6e085fac83e6137",
+        "android_client_info": {
+          "package_name": "kr.chirokyel.lifeTool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495336604694-67p0tqnnkmuipe6pkg5o15gf9earj0id.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.chirokyel.lifeTool",
+            "certificate_hash": "1e3ecc73a56dbe612d5879245b387834d7ccb753"
+          }
+        },
+        {
+          "client_id": "495336604694-i0a6vnjkasjmjch4gh2s3loiqbnjt5c8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhHziSYzSX2Y7T5OCCV3P75b3rvBqctJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495336604694-i0a6vnjkasjmjch4gh2s3loiqbnjt5c8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
